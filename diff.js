@@ -1,6 +1,6 @@
 Object.prototype.diff = function(second) {
   /**
-   * Method for substraction second object from this object
+   * Method for substraction argument object from this object
    */
   
   const d = {};
@@ -15,7 +15,11 @@ Object.prototype.diff = function(second) {
 	    typeof second[key] === 'object' &&
 	    second[key] !== null
 	  ) {
-	    d[key] = this[key].diff(second[key]);
+	    if (
+	      JSON.stringify(this[key]) !== JSON.stringify(second[key]) 
+	    ) {
+	      d[key] = this[key].diff(second[key]);
+	    }
 	  } else {
 	    d[key] = this[key];
 	  }
