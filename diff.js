@@ -10,16 +10,11 @@ Object.prototype.diff = function(second) {
       if (second.hasOwnProperty(key)) {
         if (this[key] !== second[key]) {
 	  if (
-	    typeof this[key] === 'object' && 
-	    this[key] !== null &&
-	    typeof second[key] === 'object' &&
-	    second[key] !== null
+	    typeof this[key] === 'object' && this[key] !== null &&
+	    typeof second[key] === 'object' && second[key] !== null
 	  ) {
-	    if (
-	      JSON.stringify(this[key]) !== JSON.stringify(second[key]) 
-	    ) {
-	      d[key] = this[key].diff(second[key]);
-	    }
+	    const res = this[key].diff(second[key]);
+  	    if (JSON.stringify(res) !== "{}") d[key] = res;
 	  } else {
 	    d[key] = this[key];
 	  }
