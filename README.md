@@ -30,7 +30,7 @@ const x = {
 	bC: { v: 'alpha', w: 'beta', '*': 'gamma', '#': 'dalet' } 
   },
   c: 'just c',
-  d: ['v','w','just third','#'],
+  d: ['v','w','*','#'],
   e: { q: 'Q', w:'W',e:'E',r:{r1:1,r2:2} }
 }, y = {
   a: 1,
