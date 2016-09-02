@@ -30,7 +30,8 @@ const x = {
 	bC: { v: 'alpha', w: 'beta', '*': 'gamma', '#': 'dalet' } 
   },
   c: 'just c',
-  d: ['v','w','just third','#']
+  d: ['v','w','just third','#'],
+  e: { q: 'Q', w:'W',e:'E',r:{r1:1,r2:2} }
 }, y = {
   a: 1,
   b: { 
@@ -42,6 +43,7 @@ const x = {
     cA: 33, 
     cB: { cBa: 444, cBb: 555 } 
   },
-  d: ['v','w','*','#','A']
+  d: ['v','w','*','#','A'],
+  e: { q: 'Q', w:'W',r:{r1:1,r2:2},e:'E' }
 };
 ```
