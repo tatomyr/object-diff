@@ -1,0 +1,34 @@
+<html><head>
+  <script src="https://raw.githubusercontent.com/tatomyr/object-diff/master/diff.js"></script>
+</head></body>
+  <h3>Open Console (F12)</h3>
+  Try:
+  <pre>x.diff(y)</pre>
+
+  <script>
+    x = {
+  a: 1,
+  b: { 
+    bA: 11, 
+    bB: 22, 
+    bC: { v: 'alpha', w: 'beta', '*': 'gamma', '#': 'dalet' } 
+  },
+  c: 'just c',
+  d: ['o', 'v', 'w', '*', '#'],
+  e: { q: 'Q', w:'W',e:'E',r:{r1:1,r2:2} }
+}, y = {
+  a: 1,
+  b: { 
+    bA: 11, 
+    bB: 22, 
+    bC: { v: 'alpha', w: 'beta', '*': 'gamma', '#': 'delta' } 
+  },
+  c: { 
+    cA: 33, 
+    cB: { cBa: 444, cBb: 555 } 
+  },
+  d: ['o', 'v', 'w', '*', '~', '#'],
+  e: { q: 'Q', w:'W',r:{r1:1,r2:2},e:'E' }
+};
+  </script>
+</body></html>
