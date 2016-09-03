@@ -11,11 +11,11 @@ const x = {
 x.diff(y); // => { b: 2 }
 y.diff(x); // => {}
 ```
-You can add the script by adding further tag to your page:
+~~You can add the script by adding further tag to your page:~~
 ```
 <script src="https://raw.githubusercontent.com/tatomyr/object-diff/master/diff.js"></script>
 ```
-or in console:
+~~or in console:~~
 ```
 const script = document.createElement('script');
 script.src = 'https://raw.githubusercontent.com/tatomyr/object-diff/master/diff.js';
