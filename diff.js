@@ -4,8 +4,7 @@ Object.prototype.diff = function(second) {
    */
   
   const d = {};
-  for (let key in this) {
-    if (this.hasOwnProperty(key)) {
+  for (let key in this) if (this.hasOwnProperty(key)) {
 
       if (second.hasOwnProperty(key)) {
         if (this[key] !== second[key]) {
@@ -23,10 +22,19 @@ Object.prototype.diff = function(second) {
 	d[key] = this[key];
       }
 
-    }
   }
   
   return d; 
 }
 
+Object.prototype.deep = function(indent = '') {
+  for (key in this) if (this.hasOwnProperty(key)) {
+    console.log(indent + key + ': ' + this[key]);
+    if (typeof this[key] === 'object' && this[key] !== null) {
+      this[key].deep(indent + '  ');
+    } else {
+      // nop
+    }
+  }
+}
 
