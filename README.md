@@ -13,7 +13,7 @@ y.diff(x); // => {}
 ```
 You can add the script by adding further tag to your page:
 ```
-<script src="https://tatomyr.github.io/objects-diff/diff.js"></scripst>
+<script src="https://tatomyr.github.io/objects-diff/diff.js"></script>
 ```
 or in console:
 ```
