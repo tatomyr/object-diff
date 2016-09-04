@@ -11,14 +11,14 @@ const x = {
 x.diff(y); // => { b: 2 }
 y.diff(x); // => {}
 ```
-~~You can add the script by adding further tag to your page:~~
+You can add the script by adding further tag to your page:
 ```
-<script src="https://raw.githubusercontent.com/tatomyr/object-diff/master/diff.js"></script>
+<script src="https://tatomyr.github.io/objects-diff/diff.js"></scripst>
 ```
-~~or in console:~~
+or in console:
 ```
 const script = document.createElement('script');
-script.src = 'https://raw.githubusercontent.com/tatomyr/object-diff/master/diff.js';
+script.src = 'https://tatomyr.github.io/objects-diff/diff.js';
 document.body.appendChild(script);
 ```
 ###### More example of objects to test:
