@@ -22,7 +22,7 @@ script.src = 'https://tatomyr.github.io/objects-diff/diff.js';
 document.body.appendChild(script);
 ```
 ## Test page
-You can test how it works at `https://tatomyr.github.io/objects-diff/`
+You can test how it works at <a href="https://tatomyr.github.io/objects-diff/">test page</a>
 
 ###### More example of objects to test:
 ```
