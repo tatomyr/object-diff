@@ -21,6 +21,9 @@ const script = document.createElement('script');
 script.src = 'https://tatomyr.github.io/objects-diff/diff.js';
 document.body.appendChild(script);
 ```
+## Test page
+You can test how it works at `https://tatomyr.github.io/objects-diff/`
+
 ###### More example of objects to test:
 ```
 const x = {
