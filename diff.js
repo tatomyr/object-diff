@@ -1,4 +1,4 @@
-Object.prototype.diff = function(second) {
+Object.defineProperty(Object.prototype, 'diff', { enumerable: false, value: function(second) {
   /**
    * Method for substraction argument object from this object
    */
@@ -25,9 +25,9 @@ Object.prototype.diff = function(second) {
   }
   
   return d; 
-}
+} });
 
-Object.prototype.deep = function(indent = '') {
+Object.defineProperty(Object.prototype, 'deep', { enumerable: false, value: function(indent = '') {
   for (key in this) if (this.hasOwnProperty(key)) {
     console.log(indent + key + ': ' + this[key]);
     if (typeof this[key] === 'object' && this[key] !== null) {
@@ -36,5 +36,5 @@ Object.prototype.deep = function(indent = '') {
       // nop
     }
   }
-}
+} });
 
